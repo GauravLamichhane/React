@@ -1,9 +1,11 @@
-import Button from "./Button";
-import ProfilePicture from "./ProfilePicture";
+// import Counter from "./Counter";
+
+import MyComp from "./MyComp";
 function App() {
   return(<>
-  <ProfilePicture/>
-  </>);
+{/* <counter/>xa */}
+<MyComp/>
+</>);
 }
 
 export default App
