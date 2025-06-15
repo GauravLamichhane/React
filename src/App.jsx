@@ -1,10 +1,11 @@
 // import Counter from "./Counter";
 
-import MyComp from "./MyComp";
+// import MyComp from "./MyComp";
+
+import ColorPicker from "./ColorPicker";
 function App() {
   return(<>
-{/* <counter/>xa */}
-<MyComp/>
+<ColorPicker/>
 </>);
 }
 
