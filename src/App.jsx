@@ -1,11 +1,18 @@
-// import Counter from "./Counter";
+import Counter from "./Counter";
 
 // import MyComp from "./MyComp";
 
-import ColorPicker from "./ColorPicker";
+// import ColorPicker from "./ColorPicker";
+import Cars from "./Cars";
+// import MyComponent from "./updateArraysinState";
+import MyComponent from "./UpdateArrOfObjInState";
 function App() {
   return(<>
-<ColorPicker/>
+{/* <ColorPicker/> */}
+{/* <Counter/> */}
+{/* <Cars/> */}
+<MyComponent/>
+
 </>);
 }
 
