@@ -5,13 +5,16 @@ import Counter from "./Counter";
 // import ColorPicker from "./ColorPicker";
 import Cars from "./Cars";
 // import MyComponent from "./updateArraysinState";
-import MyComponent from "./UpdateArrOfObjInState";
+// import MyComponent from "./UpdateArrOfObjInState";
+
+import ToDoList from "./ToDoList";
 function App() {
   return(<>
 {/* <ColorPicker/> */}
 {/* <Counter/> */}
 {/* <Cars/> */}
-<MyComponent/>
+{/* <MyComponent/> */}
+<ToDoList/>
 
 </>);
 }
