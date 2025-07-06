@@ -1,119 +1,96 @@
-/* General Layout */
-.to-do-list {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 0 20px;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #2e2e2e;
-}
+/* Stopwatch Component Styles */
 
-/* Heading */
-.to-do-list h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 24px;
-  text-align: left;
-}
-
-/* Input & Add Button */
-.to-do-list input[type="text"] {
-  width: 70%;
-  padding: 10px 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 16px;
-  background-color: #fff;
-  transition: border 0.2s ease;
-}
-
-.to-do-list input[type="text"]:focus {
-  outline: none;
-  border: 1px solid #a3a3a3;
-}
-
-.add-button {
-  margin-left: 10px;
-  padding: 10px 16px;
-  font-size: 15px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.add-button:hover {
-  background-color: #333;
-}
-
-/* Task List */
-ol {
-  margin-top: 30px;
-  padding-left: 0;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 14px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #eee;
-}
-
-.text {
-  flex-grow: 1;
-  text-align: left;
-  font-size: 16px;
-}
-
-/* Control Buttons */
-.delete-button,
-.up-button,
-.down-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  margin-left: 8px;
-  font-size: 16px;
-  color: #555;
-  padding: 4px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-.delete-button:hover,
-.up-button:hover,
-.down-button:hover {
-  background-color: #eaeaea;
-}
-.task-list {
+.Stopwatch {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.task-item {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px 14px;
-  background-color: #f9f9f9;
-  border-radius: 6px;
-  border: 1px solid #eee;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
 }
 
-.text {
-  font-size: 16px;
-  flex-grow: 1;
-  text-align: left;
+.display {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 50px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.buttons {
+.controls {
   display: flex;
-  gap: 8px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.start-button {
+  background: linear-gradient(45deg, #4caf50, #45a049);
+  color: white;
+}
+
+.start-button:hover {
+  background: linear-gradient(45deg, #45a049, #3d8b40);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(76, 175, 80, 0.4);
+}
+
+.start-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3);
+}
+
+.stop-button {
+  background: linear-gradient(45deg, #f44336, #d32f2f);
+  color: white;
+}
+
+.stop-button:hover {
+  background: linear-gradient(45deg, #d32f2f, #c62828);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(244, 67, 54, 0.4);
+}
+
+.stop-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(244, 67, 54, 0.3);
+}
+
+.reset-button {
+  background: linear-gradient(45deg, #ff9800, #f57c00);
+  color: white;
+}
+
+.reset-button:hover {
+  background: linear-gradient(45deg, #f57c00, #e65100);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(255, 152, 0, 0.4);
+}
+
+.reset-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(255, 152, 0, 0.3);
 }
